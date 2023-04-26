@@ -1,0 +1,13 @@
+div {
+  background-color: rgb(110, 237, 137);
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+p {
+  margin: 0;
+}

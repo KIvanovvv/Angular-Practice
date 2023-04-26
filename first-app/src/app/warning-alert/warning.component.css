@@ -1,0 +1,13 @@
+div {
+  color: red;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 10px 20px;
+  font-size: 24px;
+}
+p {
+  margin: 0;
+}
