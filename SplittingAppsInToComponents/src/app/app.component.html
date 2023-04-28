@@ -12,4 +12,12 @@
       ></app-server-element>
     </div>
   </div>
+  <hr />
+  <div class="row">
+    <app-game-control
+      (gameNumberAdded)="onGameNumberAdded($event)"
+    ></app-game-control>
+    <app-odd [oddNumbers]="oddNumbers"></app-odd>
+    <app-even [evenNumbers]="evenNumbers"></app-even>
+  </div>
 </div>

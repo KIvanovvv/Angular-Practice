@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,19 @@ export class AppComponent {
   serverElements = [
     { type: 'server', name: 'Testserver', content: 'Just a test!' },
   ];
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
+
+  onGameNumberAdded(gameNumber: number) {
+    if (gameNumber % 2 === 0) {
+      this.evenNumbers.push(gameNumber);
+      console.log(this.evenNumbers);
+    } else {
+      this.oddNumbers.push(gameNumber);
+      console.log(this.oddNumbers);
+    }
+  }
+
   onServerAdded(serverData: { serverName: string; serverContent: string }) {
     this.serverElements.push({
       type: 'server',

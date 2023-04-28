@@ -1,0 +1,8 @@
+div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+p {
+  color: red;
+}
