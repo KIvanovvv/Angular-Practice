@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 
 @Component({
   selector: 'app-root',
