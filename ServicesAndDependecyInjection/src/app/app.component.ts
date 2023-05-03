@@ -10,16 +10,13 @@ import AccountsService from './accounts.service';
 export class AppComponent implements OnInit{
 accounts:{name:string,status:string}[]=[];
 
-// accountsService=new AccountsService();
 constructor(private accountsService:AccountsService){}
 
 ngOnInit():void {
   this.accounts=this.accountsService.accounts;
 }
 
-onAccountAdded(newAccount:{name:string,status:string}){
-    this.accountsService.addAccount(newAccount.name,newAccount.status);
-}
+
 onStatusChanged(updateInfo:{id:number,newStatus:string}){
     this.accountsService.updateStatus(updateInfo.id,updateInfo.newStatus);
 }
